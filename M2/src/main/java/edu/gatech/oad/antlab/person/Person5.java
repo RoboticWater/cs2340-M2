@@ -1,10 +1,10 @@
 package edu.gatech.oad.antlab.person;
-
+import java.lang.IllegalArgumentException;
 /**
  *  A simple class for person 5
  *  returns their name and a
- *  modified string 
- *  
+ *  modified string
+ *
  *  @author Bob
  *  @version 1.1
  */
@@ -31,15 +31,26 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+	  if(input == null) {
+          throw new IllegalArgumentException("Null object cannot be shifted");
+      }
+
+      if(input.length() < 2) {
+          return input;
+      }
+
+      String front = input.substring(0, 3);
+	  String back = input.substring(2);
+	  String newStr = front + back;
+      return newStr;
 	}
-	
+
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
