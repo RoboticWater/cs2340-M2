@@ -1,3 +1,3 @@
 readme.p3.txt
 
-Austin Spalding - austinspalding@gatech.edu
+Austin Spalding - aspalding@gatech.edu
