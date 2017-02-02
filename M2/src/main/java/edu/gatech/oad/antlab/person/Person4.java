@@ -34,7 +34,7 @@ public class Person4 {
       String out ="";
       for (int i = 0; i < input.length(); i++){
         char c = input.charAt(i);
-        out+= (String)++c;
+        out+= (++c);
       }
       return out;
     }
